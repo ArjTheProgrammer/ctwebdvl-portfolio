@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Inter, sans-serif;
+    background: #000000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(21, 0, 80, 1) 50%, rgba(63, 0, 113, 1) 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .navbar .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3F0071;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #FB2576;
+  }
+
+  .hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 140px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-img {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid #FB2576;
+  }
+
+  .hero-img img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+
+  .hero-text {
+    flex: 2 1 400px;
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .badges {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  .badge {
+    background-color: #FB2576;
+    color: #3F0071;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 2);
+    transition: transform 0.2s;
+  }
+
+  .badge:hover {
+    transform: scale(1.05);
+  }
+
+  .badge img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    background: #3F0071;
+    color: #FB2576;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .btn:hover {
+    background: #FB2576;
+    color: #220871;
+  }
+
+  /* Skills Section */
+.skills {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.skill-card {
+    background: #3F0071;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    min-height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Section */
+.footer {
+    background: #150050;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    max-height: 70px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.footer-text {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 15px;
+}
