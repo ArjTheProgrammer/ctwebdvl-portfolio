@@ -2,143 +2,366 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700,1,400..700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700,1,400..700&display=swap"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="navbar">
-        <div class="logo">
-          <img src="./assets/images/nu.png" alt="Natinal University" width="100%" height="100" />
-        </div>
-        <ul>
-          <li><a href="$#home">Home</a></li>
-          <li><a href="./pages/resume.html">Resume</a></li>
-        </ul>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="./assets/images/nu.png"
+          alt="Natinal University"
+          width="100%"
+          height="100"
+        />
       </div>
-  
-      <section id="home" class="hero">
-        <div class="hero-img">
-          <img src="./assets/images/picture.png" alt="Activity Photo" />
+      <ul>
+        <li><a href="$#home">Home</a></li>
+        <li><a href="./pages/resume.html">Resume</a></li>
+      </ul>
+    </div>
+
+    <section id="home" class="hero">
+      <div class="hero-img">
+        <img src="./assets/images/picture.png" alt="Activity Photo" />
+      </div>
+      <div class="hero-text">
+        <div class="badges">
+          <span class="badge">
+            <img
+              src="./assets/images/gdgoc_nu_manila.jpg"
+              alt="GDGoC - NU Manila"
+            />
+            Technical Committee
+          </span>
+          <span class="badge">
+            <img
+              src="./assets/images/awslc_legarda.jpg"
+              alt="AWS Learning Club - Legarda"
+            />
+            Cloud Computing and Infrastructure Head
+          </span>
         </div>
-        <div class="hero-text">
-          <div class="badges">
-            <span class="badge">
-              <img src="./assets/images/gdgoc_nu_manila.jpg" alt="GDGoC - NU Manila" />
-              Technical Committee
-            </span>
-            <span class="badge">
-              <img
-                src="./assets/images/awslc_legarda.jpg"
-                alt="AWS Learning Club - Legarda"
-              />
-              Cloud Computing and Infrastructure Head
-            </span>
-          </div>
-          <h1>Hi, I'am Jose Neil C. Silagan Jr.</h1>
+        <h1>Hi, I'am Jose Neil C. Silagan Jr.</h1>
+        <p>
+          I am a BSIT student at National University Manila! I am on the path on
+          having a career in the <strong>Cloud ☁️. </strong>I am a MERN Stack
+          Developer, a
+          <strong>Microsoft Certified: Azure AI fundamentals</strong> and a
+          <strong>AWS Certified Cloud Practitioner.</strong>
+        </p>
+        <a href="resume.html" class="btn">Learn More</a>
+      </div>
+    </section>
+    <!-- skills section -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=java"
+            alt="Java"
+          />
+          <br />
+          <h3>Java</h3>
           <p>
-            I am a BSIT student at National University Manila! I am on the path on having a career in the <strong>Cloud ☁️. </strong>I am a MERN Stack Developer, a <strong>Microsoft Certified: Azure AI fundamentals</strong> and a <strong>AWS Certified Cloud Practitioner.</strong>
+            A high-level programming language used for building robust and
+            scalable applications
           </p>
-          <a href="resume.html" class="btn">Learn More</a>
-        </div>
-      </section>
-      <!-- skills section -->
-      <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=java" alt="Java" />
-            <br>
-            <h3>Java</h3>
-            <p>A high-level programming language used for building robust and scalable applications</p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
-            <br>
-            <h3>MongoDB</h3>
-            <p>A NoSQL database designed for flexibility and scalability in managing data</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=mongodb"
+            alt="MongoDB"
+          />
+          <br />
+          <h3>MongoDB</h3>
+          <p>
+            A NoSQL database designed for flexibility and scalability in
+            managing data
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=react" alt="React" />
-            <br>
-            <h3>React</h3>
-            <p>A JavaScript library used for creating interactive user interfaces</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=react"
+            alt="React"
+          />
+          <br />
+          <h3>React</h3>
+          <p>
+            A JavaScript library used for creating interactive user interfaces
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
-            <br>
-            <h3>Node.js</h3>
-            <p>A JavaScript runtime enabling server-side development with high performance</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=nodejs"
+            alt="Node.js"
+          />
+          <br />
+          <h3>Node.js</h3>
+          <p>
+            A JavaScript runtime enabling server-side development with high
+            performance
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" />
-            <br>
-            <h3>PostgreSQL</h3>
-            <p>An advanced relational database system emphasizing standards compliance</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=postgres"
+            alt="PostgreSQL"
+          />
+          <br />
+          <h3>PostgreSQL</h3>
+          <p>
+            An advanced relational database system emphasizing standards
+            compliance
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=powershell" alt="PowerShell" />
-            <br>
-            <h3>PowerShell</h3>
-            <p>A task automation and configuration management framework</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=powershell"
+            alt="PowerShell"
+          />
+          <br />
+          <h3>PowerShell</h3>
+          <p>A task automation and configuration management framework</p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=linux" alt="Linux" />
-            <br>
-            <h3>Linux</h3>
-            <p>An open-source operating system known for security and stability</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=linux"
+            alt="Linux"
+          />
+          <br />
+          <h3>Linux</h3>
+          <p>
+            An open-source operating system known for security and stability
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=azure" alt="Azure" />
-            <br>
-            <h3>Azure</h3>
-            <p>A cloud computing platform offering a variety of solutions for modern applications</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=azure"
+            alt="Azure"
+          />
+          <br />
+          <h3>Azure</h3>
+          <p>
+            A cloud computing platform offering a variety of solutions for
+            modern applications
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=aws" alt="AWS" />
-            <br>
-            <h3>AWS</h3>
-            <p>A comprehensive cloud computing platform with a wide range of services</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=aws"
+            alt="AWS"
+          />
+          <br />
+          <h3>AWS</h3>
+          <p>
+            A comprehensive cloud computing platform with a wide range of
+            services
+          </p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=git" alt="Git" />
-            <br>
-            <h3>Git</h3>
-            <p>A distributed version control system for tracking code changes</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=git"
+            alt="Git"
+          />
+          <br />
+          <h3>Git</h3>
+          <p>A distributed version control system for tracking code changes</p>
         </div>
         <div class="skill-card">
-            <img width="64" height="64" src="https://skillicons.dev/icons?i=github" alt="GitHub" />
-            <br>
-            <h3>GitHub</h3>
-            <p>A platform for collaborative development and repository hosting</p>
+          <img
+            width="64"
+            height="64"
+            src="https://skillicons.dev/icons?i=github"
+            alt="GitHub"
+          />
+          <br />
+          <h3>GitHub</h3>
+          <p>A platform for collaborative development and repository hosting</p>
         </div>
       </div>
     </section>
-  
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image video-container">
+            <div class="project-card">
+              <div class="project-image video-container">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fprincessglyza.bermudez%2Fvideos%2F1019227436931225%2F&show_text=false&width=560&t=0"
+                  width="560"
+                  height="314"
+                  sty
+                  le="border: none; overflow: hidden"
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Tribal Quest: Bayang Dinagyang</h3>
+            <p>
+              Bayang Dinagyang is an Android game developed using Android
+              Studio, inspired by the vibrant Dinagyang Festival in the
+              Philippines.
+            </p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Android Studio</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ArjTheProgrammer/tributeQuestBayangDinagyang"
+                class="project-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image video-container">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61563615877830%2Fvideos%2F626389943603265%2F&show_text=false&width=560&t=0"
+              width="560"
+              height="314"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="project-content">
+            <h3>Hev Bunny's Quest: The Amazing Race Edition</h3>
+            <p>
+              where speed met struggle, directions were optional, and snack
+              breaks were mandatory!
+            </p>
+            <div class="project-tags">
+              <span>AWS</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+              <span>NoSQL</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61563615877830"
+                class="project-link"
+                >Facebook</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/phub.png" alt="Mobile App Development" />
+            </div>
+            <div class="project-content">
+              <h3>Productivity hub</h3>
+              <p>
+                Your ultimate tool for managing tasks and projects efficiently.
+              </p>
+              <div class="project-tags">
+                <span>Javascript</span>
+                <span>CSS</span>
+                <span>HTML</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://arjtheprogrammer.github.io/top-todo-list/"
+                  class="project-link"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/ArjTheProgrammer/top-todo-list"
+                  class="project-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="footer">
       <div class="footer-container">
-          <div class="footer-logo">
-              <img src="./assets/images/nu.png" alt="National University" width="150" />
-          </div>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/joseneilsilaganjr" target="_blank" class="social-link">
-              <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
+        <div class="footer-logo">
+          <img
+            src="./assets/images/nu.png"
+            alt="National University"
+            width="150"
+          />
+        </div>
+        <div class="links">
+          <a
+            href="https://www.linkedin.com/in/joseneilsilaganjr"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
           </a>
-          <a href="https://www.facebook.com/silaganrj" target="_blank" class="social-link">
-              <img src="https://raw.githubusercontent.com/ArjTheProgrammer/ArjTheProgrammer/main/images/facebook.png" alt="Twitter" width="48px" height="48px" style="margin-left: 30px; margin-right: 30px;"/>
+          <a
+            href="https://www.facebook.com/silaganrj"
+            target="_blank"
+            class="social-link"
+          >
+            <img
+              src="https://raw.githubusercontent.com/ArjTheProgrammer/ArjTheProgrammer/main/images/facebook.png"
+              alt="Twitter"
+              width="48px"
+              height="48px"
+              style="margin-left: 30px; margin-right: 30px"
+            />
           </a>
-          <a href="https://www.github.com/ArjTheProgrammer" target="_blank" class="social-link">
-              <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+          <a
+            href="https://www.github.com/ArjTheProgrammer"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
           </a>
-          </div>
-          <!-- Add or change socials as follows -->
-          <div class="footer-text">© 2025 Jose Neil Silagan Jr. All rights reserved.</div>
+        </div>
+        <!-- Add or change socials as follows -->
+        <div class="footer-text">
+          © 2025 Jose Neil Silagan Jr. All rights reserved.
+        </div>
       </div>
-  </section>
-    </div>
+    </section>
   </body>
 </html>
