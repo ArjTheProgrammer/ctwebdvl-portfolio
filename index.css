@@ -6,14 +6,14 @@
 
 body {
   font-family: Inter, sans-serif;
-  background: #000000;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(21, 0, 80, 1) 50%,
-    rgba(63, 0, 113, 1) 100%
+  background: #fffbf5;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 251, 245, 1) 0%,
+    rgba(195, 172, 208, 1) 50%,
+    rgba(119, 67, 219, 1) 100%
   );
-  color: white;
+  color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,14 +39,14 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: #000;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #fb2576;
+  color: #7743db;
 }
 
 .hero {
@@ -70,7 +70,7 @@ body {
   height: 700px;
   border-radius: 20px;
   object-fit: cover;
-  border: 5px solid #fb2576;
+  border: 5px solid #7743db;
 }
 
 .hero-img img:hover {
@@ -96,8 +96,8 @@ p {
 }
 
 .badge {
-  background-color: #fb2576;
-  color: #3f0071;
+  background-color: #7743db;
+  color: #fffbf5;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -122,8 +122,8 @@ p {
 
 .btn {
   padding: 12px 25px;
-  background: #3f0071;
-  color: #fb2576;
+  background: #c3acd0;
+  color: #7743db;
   border-radius: 25px;
   font-weight: bold;
   text-decoration: none;
@@ -131,8 +131,8 @@ p {
 }
 
 .btn:hover {
-  background: #fb2576;
-  color: #220871;
+  background: #7743db;
+  color: #fffbf5;
 }
 
 /* Skills Section */
@@ -144,7 +144,7 @@ p {
 .skills h2 {
   font-size: 2.5em;
   margin-bottom: 30px;
-  color: #fff;
+  color: #000;
 }
 
 .skills-container {
@@ -156,7 +156,7 @@ p {
 }
 
 .skill-card {
-  background: #3f0071;
+  background: #7743db;
   color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -191,8 +191,8 @@ p {
 
 /* Footer Section */
 .footer {
-  background: #150050;
-  color: #fff;
+  background: #f7efe5;
+  color: #7743db;
   padding: 20px 0;
   text-align: center;
 }
@@ -214,7 +214,7 @@ p {
 }
 
 .footer-links a {
-  color: #fff;
+  color: #7743db;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -240,14 +240,13 @@ p {
 
 .footer-text {
   font-size: 0.8em;
-  color: #ccc;
+  color: #7743db;
   margin-top: 15px;
 }
 
 /* project section */
 .projects {
   padding: 4rem 2rem;
-  background-color: #f4f4f4;
 }
 
 .projects h2 {
@@ -284,6 +283,15 @@ p {
   padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .project-image {
