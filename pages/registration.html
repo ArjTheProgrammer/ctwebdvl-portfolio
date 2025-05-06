@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - rj</title>
+    <title>Registration - silagan</title>
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
@@ -52,16 +52,19 @@ background: linear-gradient(90deg,rgba(255, 211, 42, 1) 0%, rgba(254, 118, 103, 
             </div>
         </div>
     </section>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
+        document.getElementById('loginForm').addEventListener('submit', e => {
             e.preventDefault();
-            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
+            const name = document.getElementById('first-name').value;
             const password = document.getElementById('password').value;
-            const encodedEmail = encodeURIComponent(email);
-            window.location.href = `welcome.html?email=${encodedEmail}`;
-        });
+
+
+            const encodedUsername = encodeURIComponent(username);
+                const encodedName = encodeURIComponent(name);
+                window.location.href = `welcome.html?username=${encodedUsername}&name=${encodedName}`;
+        })
     </script>
 </body>
 </html>
