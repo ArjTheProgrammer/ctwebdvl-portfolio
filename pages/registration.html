@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - rj</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .gradient-custom {
+        background: #FFD32A;
+background: linear-gradient(90deg,rgba(255, 211, 42, 1) 0%, rgba(254, 118, 103, 1) 50%, rgba(203, 14, 226, 1) 100%);
+    }
+</style>
+<body class="gradient-custom">
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-lg" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                            <h3 class="mb-5">Registration</h3>
+                            <form id="loginForm">
+                                <div class="form-floating mb-3">
+                                    <input type="input" class="form-control" id="first-name" placeholder="ex. john" required>
+                                    <label for="first-name">First name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="input" class="form-control" id="last-name" placeholder="ex. doe" required>
+                                    <label for="last-name">Last name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="input" class="form-control" id="username" placeholder="JohnDoeTheProgrammer" required>
+                                    <label for="last-name">Username</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    <label for="email">Email address</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                    <label for="password">Password</label>
+                                </div>
+                                <button class="btn btn-warning btn-lg w-100 mb-4" type="submit">Register</button>
+                                <p class="mb-0">already have an account?
+                                <a href="./login.html" class="text-warning fw-bold">login</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const encodedEmail = encodeURIComponent(email);
+            window.location.href = `welcome.html?email=${encodedEmail}`;
+        });
+    </script>
+</body>
+</html>
