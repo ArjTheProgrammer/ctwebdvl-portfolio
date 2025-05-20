@@ -72,8 +72,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 140px;
-  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -100,6 +98,7 @@ h1 {
   flex: 2 1 400px;
   text-align: left;
   max-width: 600px;
+  padding: clamp(50px, 10vw, 50px);
 }
 
 .badges {
