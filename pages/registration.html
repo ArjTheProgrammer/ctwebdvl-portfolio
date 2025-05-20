@@ -19,7 +19,7 @@ background: linear-gradient(90deg,rgba(255, 211, 42, 1) 0%, rgba(254, 118, 103, 
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="card shadow-lg" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
-                            <h3 class="mb-5">Registration</h3>
+                            <h3 class="mb-4">Registration</h3>
                             <form id="loginForm">
                                 <div class="form-floating mb-3">
                                     <input type="input" class="form-control" id="first-name" placeholder="ex. john" required>
@@ -41,6 +41,10 @@ background: linear-gradient(90deg,rgba(255, 211, 42, 1) 0%, rgba(254, 118, 103, 
                                     <input type="password" class="form-control" id="password" placeholder="Password" required>
                                     <label for="password">Password</label>
                                 </div>
+                                <div class="form-floating mb-4">
+                                    <input type="password" class="form-control" id="confirm" placeholder="Password" required>
+                                    <label for="password">confirm password</label>
+                                </div>
                                 <button class="btn btn-warning btn-lg w-100 mb-4" type="submit">Register</button>
                                 <p class="mb-0">already have an account?
                                 <a href="./login.html" class="text-warning fw-bold">login</a>
@@ -59,11 +63,16 @@ background: linear-gradient(90deg,rgba(255, 211, 42, 1) 0%, rgba(254, 118, 103, 
             const username = document.getElementById('username').value;
             const name = document.getElementById('first-name').value;
             const password = document.getElementById('password').value;
+            const confirm = document.getElementById('confirm').value;
 
-
-            const encodedUsername = encodeURIComponent(username);
+            if (password == confirm){
+                const encodedUsername = encodeURIComponent(username);
                 const encodedName = encodeURIComponent(name);
                 window.location.href = `welcome.html?username=${encodedUsername}&name=${encodedName}`;
+            }
+            else {
+                alert ("password do not match")
+            }
         })
     </script>
 </body>
