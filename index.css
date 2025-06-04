@@ -30,7 +30,7 @@ h1 {
 }
 
 .navbar ul li a {
-  font-size: clamp(12px, 1%, 5rem);
+  font-size: clamp(12px, 1.2vw, 1.5rem);
 }
 
 .logo img {
@@ -141,7 +141,7 @@ p {
 
 .btn,
 #login {
-  padding: clamp(5px, 1%, 12px) clamp(12px, 2%, 25px);
+  padding: clamp(5px, 0.5vw + 4px, 12px) clamp(12px, 1.5vw + 8px, 25px);
   color: white;
   background-color: #7743db;
   border-radius: 25px;
