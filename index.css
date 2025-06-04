@@ -8,7 +8,6 @@ body {
   font-family: Inter, sans-serif;
   background: #fffbf5;
   color: #000;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +84,7 @@ h1 {
 
 .hero-img img {
   width: auto;
-  height: clamp(400px, 40vw, 700px);
+  height: clamp(300px, 40vw, 500px);
   border-radius: 20px;
   object-fit: cover;
   border: 5px solid #7743db;
